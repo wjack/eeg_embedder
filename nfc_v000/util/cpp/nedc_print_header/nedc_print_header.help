@@ -1,0 +1,24 @@
+name: nedc_print_header
+synopsis: nedc_print_header [options] file(s)
+descr: prints the EDF header for each file
+
+options:
+ -help: display this help message
+
+arguments:
+ file(s): individual EDF files or lists of EDF files
+
+examples: 
+
+ nedc_print_header file1.edf
+
+  prints the header of file1.edf
+
+ nedc_print_header file1.list
+
+  prints the headers of the files specified in file.list
+
+ nedc_print_header file1.edf file2.list
+
+  prints the headers of file1.edf and all the files in file2.list
+

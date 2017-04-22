@@ -1,0 +1,2 @@
+Usage: nedc_print_signal [-help] [-chan_no val] [-start val] [-num val] file.edf
+

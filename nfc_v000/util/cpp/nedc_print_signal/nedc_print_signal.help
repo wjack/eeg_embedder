@@ -1,0 +1,25 @@
+name: nedc_print_signal
+synopsis: nedc_print_signal [options] file
+descr: prints the signal value for the EDF file
+
+options:
+ -channel_number: the number of the channel that will be displayed [0]
+ -start_sample: number of the starting sample [0]
+ -number_samples: number of samples to be displayed [500];
+ -help: display this help message
+
+arguments:
+ files: individual EDF file
+
+examples: 
+
+ nedc_print_signal -chan 3 -start 5 -num 200 file1.edf
+
+  prints the value of the channel 3 of the signal in file1.edf. It starts with
+  sample number 5 and prints 200 samples 
+
+ nedc_print_signal file1.edf
+
+  prints the value of the channel 0 of the signal in file1.edf. It starts with
+  sample number 0 and prints 500 samples
+
